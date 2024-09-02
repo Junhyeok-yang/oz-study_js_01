@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문for</title>
+</head>
+<body>
+    <script>
+        /*
+        for(초기식;조건식;반복식)
+
+        초기식: 반복 조건의 초기화 작업
+        반복식: 반복이 한 번 끝날 때마다 실행될 작업
+
+        for(let i = 1; i <= 5; i += 1) {
+            document.write('good<br>')
+        }
+        초기식 i는 1이다.
+        조건식 i가 5보다 작거나 같으면 반복할꺼야.
+        반복식 동작이 수행될 때마다 i는 1씩 증가할 것이다.
+
+        */
+
+        for(let i = 0; i < 5; i += 1){
+            document.write(` ${i+1}번째 반복중이다<br/>`)
+
+        }
+
+        //초기식에서 선언한 변수는 for문 밖에선 사용 불가
+        alert(i)
+        //alert 안 i는 초기식에서 선언했기 때문에 alert가 작동 안됨
+    </script>
+</body>
+</html>
